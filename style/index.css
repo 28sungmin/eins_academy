@@ -87,7 +87,7 @@ main .wrap2 {
   width: 90%;
   height: 50vh;
   /* background-color: #888; */
-  margin: 0 auto;
+  margin: 50px auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -139,4 +139,116 @@ main .wrap2 .reasons > div.reason2 a .img2 {
 }
 main .wrap2 .reasons > div.reason3 a .img3 {
   background-image: url(../img/main_3.jpeg);
+}
+
+/* section  wrap3 */
+section .wrap3 {
+  width: 100%;
+  height: 60vh;
+  /* background-color: #666; */
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+section .wrap3 .test_img {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+section .wrap3 .test_img::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: url(../img/test.png);
+  /* background-size: cover; */
+  /* background-position: -40% 50%; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.7;
+}
+section .wrap3 .test_img h3 {
+  padding-top: 20px;
+  font-size: 1.5rem;
+}
+section .wrap3 .test_img h3 span {
+  text-decoration: underline;
+  text-decoration-color: #faa;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0px;
+}
+
+section .wrap3 .test_img nav {
+  width: 30%;
+  height: 100px;
+  /* background-color: #ffa; */
+  float: right;
+  line-height: 100px;
+}
+section .wrap3 .test_img nav h2 {
+  margin-bottom: 20px;
+}
+section .wrap3 .test_img nav button {
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  border-radius: 15px;
+  border: 1px solid red;
+  background-color: red;
+  cursor: pointer;
+}
+
+/* section wrap4 */
+section {
+  background: linear-gradient(176deg, #fff, #f4f6f9);
+}
+section .wrap4 {
+  width: 85%;
+  height: 60vh;
+  /* background-color: #666; */
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+}
+section .wrap4 .test_img2 {
+  width: 40%;
+  height: 60vh;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url(../img/test.png);
+}
+section .wrap4 .test_img2 h3 {
+  margin-top: 30px;
+  font-size: 1.3rem;
+}
+section .wrap4 .test_img2 h3 span {
+  text-decoration: underline;
+  text-decoration-color: #faa;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 0px;
+}
+section .wrap4 .test {
+  text-align: center;
+  margin: 0 auto;
+  /* background-color: #faa; */
+}
+section .wrap4 .test h2 {
+  margin-bottom: 50px;
+}
+section .wrap4 .test nav p {
+  margin-bottom: 10px;
+}
+section .wrap4 .test button {
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  border-radius: 15px;
+  border: 1px solid red;
+  background-color: red;
+  cursor: pointer;
+  margin-top: 50px;
 }
