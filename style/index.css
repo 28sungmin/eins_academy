@@ -141,6 +141,60 @@ main .wrap2 .reasons > div.reason3 a .img3 {
   background-image: url(../img/main_3.jpeg);
 }
 
+/* section .diff */
+section#diff {
+  background-color: #f4f6f9;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+section .diff {
+  width: 85%;
+  /* background-color: #666; */
+  margin: 20px auto 20px;
+}
+section .diff h3 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 20px 0;
+}
+section .diff h3 span {
+  text-decoration: underline;
+  text-decoration-color: #faa;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 0px;
+}
+section .diff ul li {
+  height: 150px;
+  display: flex;
+  /* background-color: #aff; */
+  margin: 10px 0;
+  align-items: center;
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+section .diff ul li:hover {
+  border: 3px solid #a2ebf0;
+}
+section .diff ul li div {
+  width: 64px;
+  height: 64px;
+  /* background-color: #aaf; */
+  display: flex;
+  align-content: center;
+  margin: 0 30px;
+}
+section .diff ul li nav {
+  margin-top: 20px;
+}
+section .diff ul li nav h5 {
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+section .diff ul li nav p {
+  margin: 10px 0;
+}
+
 /* section  wrap3 */
 section .wrap3 {
   width: 100%;
@@ -161,11 +215,10 @@ section .wrap3 .test_img::after {
   height: 100%;
   content: "";
   background: url(../img/test.png);
-  /* background-size: cover; */
-  /* background-position: -40% 50%; */
   position: absolute;
   top: 0;
-  right: 0;
+  left: 0;
+  background-position: -20% 50%;
   z-index: -1;
   opacity: 0.7;
 }
@@ -179,129 +232,28 @@ section .wrap3 .test_img h3 span {
   text-decoration-thickness: 3px;
   text-underline-offset: 0px;
 }
-
-section .wrap3 .test_img nav {
+section .wrap3 .test_img .click {
   width: 30%;
   height: 100px;
-  /* background-color: #ffa; */
-  float: right;
-  line-height: 100px;
-}
-section .wrap3 .test_img nav h2 {
-  margin-bottom: 20px;
-}
-section .wrap3 .test_img nav button {
-  width: 120px;
-  height: 40px;
-  color: #fff;
-  border-radius: 15px;
-  border: 1px solid red;
-  background-color: red;
-  cursor: pointer;
-}
-
-/* section wrap4 */
-section#wrap4 {
-  background: linear-gradient(176deg, #fff, #f4f6f9);
-}
-section .wrap4 {
-  width: 85%;
-  height: 60vh;
-  /* background-color: #666; */
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 50px;
-}
-section .wrap4 .test_img2 {
-  width: 70%;
-  height: 60vh;
-  position: relative;
-  /* background-size: cover;
-  background-position: 0% 50%; */
-  z-index: 1;
-}
-section .wrap4 .test_img2::after {
-  width: 100%;
-  height: 100%;
-  content: "";
-  background-image: url(../img/test.png);
-  background-size: cover;
-  background-position: 50% 50%;
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 0.7;
+  top: 30%;
+  /* transform: translateY(-50%); */
+  right: 0;
+  /* background-color: #ffa; */
 }
-section .wrap4 .test_img2 h3 {
-  margin-top: 30px;
-  font-size: 1.3rem;
+section .wrap3 .test_img .click h2 {
+  margin-bottom: 40px;
 }
-section .wrap4 .test_img2 h3 span {
-  text-decoration: underline;
-  text-decoration-color: #faa;
-  text-decoration-thickness: 5px;
-  text-underline-offset: 0px;
+section .wrap3 .test_img .click .sentence p {
+  margin: 10px 0;
 }
-section .wrap4 .test {
-  text-align: center;
-  margin: 0 auto;
-  /* background-color: #faa; */
-}
-section .wrap4 .test h2 {
-  margin-bottom: 50px;
-}
-section .wrap4 .test nav p {
-  margin-bottom: 10px;
-}
-section .wrap4 .test button {
+section .wrap3 .test_img .click button {
   width: 120px;
   height: 40px;
-  color: #fff;
-  border-radius: 15px;
-  border: 1px solid red;
-  background-color: red;
-  cursor: pointer;
-  margin-top: 50px;
-}
-
-/* section wrap5 */
-section .wrap5 {
-  width: 60%;
-  height: 60vh;
-  /* background-color: #666; */
-  margin: 0 auto;
-  text-align: center;
-}
-section .wrap5 h3 {
-  font-size: 2rem;
-}
-section .wrap5 h3 span {
-  text-decoration: underline;
-  text-decoration-color: #faa;
-  text-decoration-thickness: 5px;
-  text-underline-offset: 0px;
-}
-section .wrap5 .test_img3 {
-  width: 50%;
-  height: 300px;
-  background-image: url(../img/test_1.png);
-  background-size: cover;
-  background-position: 50% 50%;
-  margin: 20px auto;
-}
-section .wrap5 nav h2 {
-  margin-bottom: 0;
-}
-section .wrap5 nav button {
-  width: 120px;
-  height: 40px;
-  color: #fff;
-  border-radius: 15px;
-  border: 1px solid red;
-  background-color: red;
-  cursor: pointer;
   margin-top: 20px;
+  color: #fff;
+  border-radius: 15px;
+  border: 1px solid red;
+  background-color: red;
+  cursor: pointer;
 }
