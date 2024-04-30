@@ -201,7 +201,7 @@ section .wrap3 .test_img nav button {
 }
 
 /* section wrap4 */
-section {
+section#wrap4 {
   background: linear-gradient(176deg, #fff, #f4f6f9);
 }
 section .wrap4 {
@@ -215,11 +215,25 @@ section .wrap4 {
   margin-bottom: 50px;
 }
 section .wrap4 .test_img2 {
-  width: 40%;
+  width: 70%;
   height: 60vh;
+  position: relative;
+  /* background-size: cover;
+  background-position: 0% 50%; */
+  z-index: 1;
+}
+section .wrap4 .test_img2::after {
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url(../img/test.png);
   background-size: cover;
   background-position: 50% 50%;
-  background-image: url(../img/test.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.7;
 }
 section .wrap4 .test_img2 h3 {
   margin-top: 30px;
@@ -251,4 +265,43 @@ section .wrap4 .test button {
   background-color: red;
   cursor: pointer;
   margin-top: 50px;
+}
+
+/* section wrap5 */
+section .wrap5 {
+  width: 60%;
+  height: 60vh;
+  /* background-color: #666; */
+  margin: 0 auto;
+  text-align: center;
+}
+section .wrap5 h3 {
+  font-size: 2rem;
+}
+section .wrap5 h3 span {
+  text-decoration: underline;
+  text-decoration-color: #faa;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 0px;
+}
+section .wrap5 .test_img3 {
+  width: 50%;
+  height: 300px;
+  background-image: url(../img/test_1.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  margin: 20px auto;
+}
+section .wrap5 nav h2 {
+  margin-bottom: 0;
+}
+section .wrap5 nav button {
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  border-radius: 15px;
+  border: 1px solid red;
+  background-color: red;
+  cursor: pointer;
+  margin-top: 20px;
 }
