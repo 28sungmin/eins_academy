@@ -63,6 +63,10 @@ header .slider_box .wrap .logo a img {
   width: 200px;
 }
 header .slider_box .wrap .menu {
+  color: rgba(234, 234, 66, 0.873);
+}
+header .slider_box .wrap .menu.menu_color {
+  color: rgb(255, 187, 0);
 }
 header .slider_box .wrap .menu ul {
   display: flex;
@@ -83,6 +87,28 @@ header .slider_box .wrap .login ul li {
   margin: 10px;
   font-weight: bold;
 }
+header .slider_box .welcome {
+  width: 40%;
+  /* background-color: #fff; */
+  text-align: center;
+  margin: 80px auto;
+  /* background: linear-gradient(180deg, #cdcccc, #a3a3a3); */
+}
+header .slider_box .welcome .welcome_nav {
+  color: #fff;
+  /* position: relative; */
+}
+header .slider_box .welcome .welcome_nav.nav_right {
+  position: absolute;
+  right: 20px;
+}
+header .slider_box .welcome .welcome_nav h3 {
+  font-size: 1.6rem;
+}
+header .slider_box .welcome .welcome_nav h1 {
+  font-size: 3rem;
+  margin-top: 15px;
+}
 
 /* main */
 main .wrap2 {
@@ -102,8 +128,8 @@ main .wrap2 .title {
 main .wrap2 .title h3 span {
   text-decoration: underline;
   text-decoration-color: #faa;
-  text-decoration-thickness: 7px;
-  text-underline-offset: 0px;
+  text-decoration-thickness: 10px;
+  text-underline-offset: -2px;
 }
 
 main .wrap2 .reasons {
@@ -162,8 +188,8 @@ section .diff h3 {
 section .diff h3 span {
   text-decoration: underline;
   text-decoration-color: #faa;
-  text-decoration-thickness: 5px;
-  text-underline-offset: 0px;
+  text-decoration-thickness: 10px;
+  text-underline-offset: -2px;
 }
 section .diff ul li {
   height: 150px;
@@ -200,7 +226,7 @@ section .diff ul li nav p {
 /* section  wrap3 */
 section .wrap3 {
   width: 100%;
-  height: 40vh;
+  height: 60vh;
   /* background-color: #666; */
   margin: 0 auto;
   margin-bottom: 60px;
@@ -231,8 +257,8 @@ section .wrap3 .test_img h3 {
 section .wrap3 .test_img h3 span {
   text-decoration: underline;
   text-decoration-color: #faa;
-  text-decoration-thickness: 3px;
-  text-underline-offset: 0px;
+  text-decoration-thickness: 10px;
+  text-underline-offset: -2px;
 }
 section .wrap3 .test_img .click {
   width: 30%;
