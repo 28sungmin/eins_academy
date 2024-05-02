@@ -396,3 +396,7 @@ section .wrap3 .test_img .click button {
 #slider_box .slider .slide p {
   font-size: 1.7rem;
 }
+#slider_box .slider .slide .level {
+  margin-top: 25px;
+  font-size: 2.5rem;
+}
