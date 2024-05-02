@@ -81,3 +81,9 @@ $sliderBox.addEventListener("mouseout", function () {
 $arrow.addEventListener("mouseout", function () {
   this.classList.remove("hover");
 });
+
+$slide.forEach(function (slide) {
+  slide.addEventListener("click", function () {
+    window.location.href = "p1.html";
+  });
+});
