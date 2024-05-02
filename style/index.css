@@ -287,3 +287,84 @@ section .wrap3 .test_img .click button {
   background-color: red;
   cursor: pointer;
 }
+
+/* online_title */
+#online_title {
+  position: relative;
+  background-color: #ffa;
+}
+#online_title .online {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #faa;
+  padding: 15px 0;
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+}
+/* arrow */
+#online_title .arrow {
+  font-size: 1.5rem;
+  color: #000;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translateY(-50%);
+}
+#online_title .arrow button {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#online_title .arrow button:hover {
+  background-color: #888;
+  color: #fff;
+}
+#online_title .arrow .arrow_prev {
+  margin-left: 7px;
+}
+#online_title .arrow .arrow_next {
+  margin-left: 7px;
+}
+
+/* 온라인 강의 슬라이드 */
+#slider_box {
+  width: 200px;
+  height: 250px;
+  padding: 10px 0;
+  margin-left: 110px;
+  /* background-color: #aaa; */
+}
+#slider_box .slider {
+  width: 700%;
+  height: 100%;
+  padding: 10px 0;
+  background-color: #aff;
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-left: 100%; */
+}
+#slider_box .slider.prev {
+  transition: margin-right 0.5s;
+}
+#slider_box .slider.next {
+  transition: margin-left 0.5s;
+}
+#slider_box .slider .slide {
+  width: calc(100% / 7 - 20px);
+  height: 100%;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed orangered;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
