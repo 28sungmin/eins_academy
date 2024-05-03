@@ -120,12 +120,13 @@ header .slider_box .welcome .welcome_nav h1 {
 /* main */
 main .wrap2 {
   width: 90%;
-  height: 50vh;
+  /* height: 50vh; */
   /* background-color: #888; */
   margin: 50px auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* background-color: #666; */
 }
 main .wrap2 .title {
   width: 25%;
@@ -174,6 +175,10 @@ main .wrap2 .reasons > div.reason2 a .img2 {
 }
 main .wrap2 .reasons > div.reason3 a .img3 {
   background-image: url(../img/main_3.jpeg);
+}
+main .wrap2 .reasons > div.reason2 h5,
+main .wrap2 .reasons > div.reason3 h5 {
+  margin-top: 5px;
 }
 
 /* section .diff */

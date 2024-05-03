@@ -5,7 +5,6 @@
     display: none;
   }
 }
-
 @media (max-width: 1199px) {
   header .slider_box .wrap {
     width: 95%;
@@ -24,7 +23,6 @@
     width: 50px;
     height: 50px;
     /* background-color: red; */
-    order: 3;
   }
   .resBtn.active {
     position: fixed;
@@ -98,10 +96,36 @@
   header .slider_box .welcome .welcome_nav h3 {
     font-size: 1.3rem;
   }
+
+  /* 어떤 학습자가 수강하면 좋을까? */
+  main .wrap2 {
+    width: 100%;
+    padding: 0 20px;
+    display: block;
+  }
+  main .wrap2 .title {
+    width: 100%;
+    /* background-color: #faa; */
+    display: flex;
+    justify-content: center;
+  }
+  main .wrap2 .title h3:last-child {
+    margin-left: 10px;
+  }
+  main .wrap2 .reasons {
+    width: 100%;
+    /* background-color: #ffa; */
+    display: block;
+  }
+  main .wrap2 .reasons > div {
+    /* width: 500px; */
+    width: 50%;
+    margin: 0 auto;
+  }
 }
 @media (max-width: 767px) {
   /* 메인 화면 */
-  header .slider_box .slider {
+  header .slider_box {
     height: 60vh;
   }
   header .slider_box .wrap .logo {
@@ -112,5 +136,33 @@
   }
   header .slider_box .welcome .welcome_nav h1 {
     display: none;
+  }
+
+  /* 어떤 학습자가 수강하면 좋을까? */
+  main .wrap2 {
+    width: 100%;
+    padding: 0 20px;
+    display: block;
+    /* background-color: #666; */
+  }
+  main .wrap2 .title {
+    /* width: 100%; */
+    margin: 0 auto;
+    display: block;
+    /* background-color: #faa; */
+  }
+  main .wrap2 .title h3 {
+    display: flex;
+    justify-content: center;
+  }
+  main .wrap2 .title h3:last-child {
+    margin-left: 0px;
+  }
+  main .wrap2 .reasons {
+    /* background-color: #ffa; */
+  }
+  main .wrap2 .reasons > div {
+    /* width: 300px; */
+    width: 60%;
   }
 }
