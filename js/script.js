@@ -2,6 +2,11 @@
 const slide = document.querySelector(".slider_box .slider");
 const $nav = document.querySelector(".welcome_nav");
 const $menu = document.querySelector(".menu");
+// 반응형 메뉴를 위한 변수들
+const $body = document.querySelector("body");
+const $resBtn = document.querySelector(".resBtn");
+const $menuBtn = document.querySelector(".resBtn .menuBtn");
+const $closeBtn = document.querySelector(".resBtn .closeBtn");
 
 let no = 1;
 setInterval(function () {
@@ -17,6 +22,19 @@ setInterval(function () {
     no = 0;
   }
 }, 5000);
+
+// 반응형에서 클릭할 대상(for Showing menu)
+
+$menuBtn.addEventListener("click", function () {
+  $body.classList.add("showMenu");
+  $resBtn.classList.add("active");
+  $menu.classList.add("active");
+});
+$closeBtn.addEventListener("click", function () {
+  $body.classList.remove("showMenu");
+  $resBtn.classList.remove("active");
+  $menu.classList.remove("active");
+});
 
 // 아이콘 넣기
 const diffList = document.querySelectorAll(".diff ul li");

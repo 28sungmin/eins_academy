@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+@media (min-width: 1199px) {
+  .resBtn {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  header .slider_box .wrap {
+    width: 95%;
+  }
+  header .slider_box .wrap .login {
+  }
+  body.showMenu {
+    overflow-y: hidden;
+  }
+  /* 메뉴바 만들기 */
+  .resBtn {
+    position: absolute;
+    /* display: block; */
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    /* background-color: red; */
+    order: 3;
+  }
+  .resBtn.active {
+    position: fixed;
+    z-index: 2;
+  }
+  .resBtn ul {
+  }
+  .resBtn ul li {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .resBtn ul li img {
+    display: block;
+    /* 왜 height: 30px을 해야지 메뉴 버튼이 나오지? */
+    height: 40px;
+    cursor: pointer;
+  }
+  .resBtn ul li:first-child img {
+  }
+  .resBtn ul li:last-child img {
+    display: none;
+  }
+  .resBtn.active ul li:first-child img {
+    display: none;
+  }
+  .resBtn.resBtn.active ul li:last-child img {
+    display: block;
+  }
+
+  header .slider_box .wrap .menu {
+    /* menu는 하얀색 배경 위에 올라간 상태로 같이 tranform 된거라서 우리 눈에 안 보이게 된다. */
+    /* position: fixed / top: 0 / left: 0 ==> 검은 배경이 전체로 확장되게 해준다. */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+
+    transform: translateY(-100%);
+    /* fixed 라서 가능 */
+    z-index: 1;
+  }
+  header .slider_box .wrap .menu.active {
+    transform: translateY(0);
+    transition: transform 0.5s;
+  }
+  header .slider_box .wrap .menu ul {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  header .slider_box .wrap .menu ul li {
+    padding: 20px 0;
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  header .slider_box .wrap .menu ul li:hover {
+    color: #fd0;
+  }
+  header .slider_box .welcome .welcome_nav {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), transparent);
+  }
+  header .slider_box .welcome .welcome_nav h3 {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 767px) {
+  /* 메인 화면 */
+  header .slider_box .slider {
+    height: 60vh;
+  }
+  header .slider_box .wrap .logo {
+    margin-top: 0;
+  }
+  header .slider_box .welcome .welcome_nav h3 {
+    display: none;
+  }
+  header .slider_box .welcome .welcome_nav h1 {
+    display: none;
+  }
+}

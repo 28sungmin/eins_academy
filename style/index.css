@@ -42,10 +42,11 @@ header .slider_box .slider {
   background-position: 50% 25%;
   background-image: url(../img/header2_1.jpeg);
   transition: background-image 1s;
+  position: relative;
 }
 
 header .slider_box .wrap {
-  width: 85%;
+  width: 1200px;
   height: 60px;
   /* background-color: #777; */
   display: flex;
@@ -63,10 +64,12 @@ header .slider_box .wrap .logo a img {
   width: 200px;
 }
 header .slider_box .wrap .menu {
+  /* background-color: red; */
   color: rgba(234, 234, 66, 0.873);
 }
+
 header .slider_box .wrap .menu.menu_color {
-  color: rgb(255, 187, 0);
+  /* color: rgb(255, 187, 0); */
   /* color: rgb(0, 102, 255); */
   color: orange;
 }
@@ -77,6 +80,7 @@ header .slider_box .wrap .menu ul li {
   font-size: 1.1rem;
   font-weight: bold;
   margin: 20px;
+  cursor: pointer;
 }
 header .slider_box .wrap .login {
   align-items: center;
@@ -90,14 +94,15 @@ header .slider_box .wrap .login ul li {
   font-weight: bold;
 }
 header .slider_box .welcome {
-  width: 40%;
-  /* background-color: #fff; */
   text-align: center;
   margin: 80px auto;
   /* background: linear-gradient(180deg, #cdcccc, #a3a3a3); */
 }
 header .slider_box .welcome .welcome_nav {
+  width: 65%;
+  margin: 0 auto;
   color: #fff;
+  /* background-color: #fff; */
   /* position: relative; */
 }
 header .slider_box .welcome .welcome_nav.nav_right {
