@@ -117,3 +117,38 @@ $slide.forEach(function (slide) {
     window.location.href = "p1.html";
   });
 });
+
+// 슬라이드 색 입히기
+const $color_div = [
+  [226, 240, 217],
+  [218, 227, 243],
+  [255, 242, 204],
+  [237, 237, 237],
+  [251, 229, 214],
+  [222, 235, 247],
+  [214, 220, 229],
+];
+const $color_text = [
+  [84, 130, 53],
+  [47, 85, 151],
+  [191, 144, 0],
+  [124, 124, 124],
+  [197, 90, 17],
+  [46, 117, 182],
+  [51, 63, 80],
+];
+
+const $slide_h5 = document.querySelectorAll("#slider_box .slider .slide h5");
+const $slide_p = document.querySelectorAll("#slider_box .slider .slide p");
+console.log($slide[2].innerHTML);
+
+let $slide_no1 = 0;
+for (let i of $color_div) {
+  $slide[$slide_no1].style.backgroundColor = `rgba(${i[0]}, ${i[1]}, ${i[2]})`;
+  $slide_no1++;
+}
+let $slide_no2 = 0;
+for (let j of $color_text) {
+  $slide_h5[$slide_no2].style.color = `rgba(${j[0]}, ${j[1]}, ${j[2]})`;
+  $slide_no2++;
+}

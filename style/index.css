@@ -191,7 +191,7 @@ section#diff {
 section .diff {
   width: 70%;
   /* background-color: #666; */
-  margin: 20px auto 20px;
+  margin: 20px auto 50px;
 }
 section .diff h3 {
   text-align: center;
@@ -242,7 +242,7 @@ section .wrap3 {
   height: 60vh;
   /* background-color: #666; */
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 section .wrap3 .test_img {
   width: 100%;
@@ -256,10 +256,11 @@ section .wrap3 .test_img::after {
   height: 100%;
   content: "";
   background: url(../img/test1.png);
+  background-size: 80% 130%;
+  background-position: 21% 50%;
   position: absolute;
   top: 0;
   left: 0;
-  background-position: 200% 58%;
   z-index: -1;
   opacity: 0.7;
 }
@@ -274,10 +275,11 @@ section .wrap3 .test_img h3 span {
   text-underline-offset: -2px;
 }
 section .wrap3 .test_img .click {
-  width: 30%;
-  height: 100px;
+  /* width: 30%; */
+  /* height: 100px; */
+  margin-right: 20px;
   position: absolute;
-  top: 30%;
+  top: 50%;
   transform: translateY(-50%);
   right: 0;
   /* background-color: #ffa; */
@@ -288,7 +290,7 @@ section .wrap3 .test_img .click h2 {
 section .wrap3 .test_img .click .sentence p {
   margin: 10px 0;
 }
-section .wrap3 .test_img .click button {
+section .wrap3 .test_img .click .button_wrap button {
   width: 120px;
   height: 40px;
   margin-top: 20px;
@@ -305,6 +307,7 @@ section .wrap3 .test_img .click button {
   /* background-color: #ffa; */
 }
 #online_title .online {
+  position: relative;
   width: 80%;
   margin: 0 auto;
   /* background-color: #faa; */
@@ -325,7 +328,8 @@ section .wrap3 .test_img .click button {
   display: flex;
   position: absolute;
   top: 50%;
-  left: 30%;
+  /* left: 30%; */
+  left: 500px;
   transform: translateY(-50%);
 }
 #online_title .arrow button {
@@ -364,6 +368,7 @@ section .wrap3 .test_img .click button {
   padding: 10px 0;
   margin-left: 110px;
   /* background-color: #aaa; */
+  transition: 0.5s;
 }
 #slider_box .slider {
   width: 700%;
@@ -410,4 +415,16 @@ section .wrap3 .test_img .click button {
 #slider_box .slider .slide .level {
   margin-top: 25px;
   font-size: 2rem;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  margin-top: 50px;
+  background-color: #000;
+  color: #fff;
+}
+footer .contact {
+  text-align: center;
+  line-height: 10vh;
 }

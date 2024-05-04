@@ -182,6 +182,88 @@
     justify-content: center;
     align-items: center;
   }
+
+  /* 본인의 독일어 수준 */
+  section .wrap3 .test_img::after {
+    width: 100%;
+    height: 45vh;
+    content: "";
+    background: url(../img/test1.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.7;
+  }
+  section .wrap3 .test_img .click {
+    width: 100%;
+    display: block;
+    top: 80%;
+    right: 50%;
+    transform: translateX(50%);
+    margin-right: 0px;
+    /* background-color: #ffa; */
+  }
+  section .wrap3 .test_img .click h2 {
+    margin-bottom: 20px;
+  }
+  section .wrap3 .test_img .click .button_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section .wrap3 .test_img .click .button_wrap .sentence {
+    margin-right: 15px;
+  }
+  section .wrap3 .test_img .click .button_wrap .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #faa; */
+  }
+  section .wrap3 .test_img .click .button_wrap .button button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+  }
+
+  /* 온라인 교육 강의 */
+  #online_title .arrow {
+    position: absolute;
+    top: 50%;
+    left: 500px;
+    transform: translateY(-50%);
+  }
+  #slider_all {
+    width: 100%;
+    height: 300px;
+    background-color: #f4f6f9;
+    display: flex;
+    align-items: center;
+  }
+  #slider_box {
+    width: 200px;
+    height: 300px;
+    transition: 0.5s;
+    padding: 10px 0;
+    margin-left: 110px;
+    /* background-color: #aaa; */
+  }
+  #slider_box .slider .slide h5 {
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #slider_box .slider .slide p {
+    font-size: 1.3rem;
+  }
+  #slider_box .slider .slide .level {
+    margin-top: 25px;
+    font-size: 1.7rem;
+  }
 }
 
 /* max-width: 767px */
@@ -226,5 +308,14 @@
   main .wrap2 .reasons > div {
     /* width: 300px; */
     width: 60%;
+  }
+
+  /* 온라인 교육 강의 */
+  #online_title .arrow {
+    position: absolute;
+    top: 50%;
+    left: 350px;
+    transform: translateY(-50%);
+    transition: 0.5s;
   }
 }
