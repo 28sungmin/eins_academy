@@ -36,15 +36,27 @@ $closeBtn.addEventListener("click", function () {
   $menu.classList.remove("active");
 });
 
-// 아이콘 넣기
-const diffList = document.querySelectorAll(".diff ul li");
+// 다른 교육기관과 차이가 있다면?? 아이콘 넣기
+const $diffList = document.querySelectorAll(".diff ul li");
+const $detail = document.querySelector(".detail");
 
-for (let i = 0; i < diffList.length; i++) {
-  const diffItem = diffList[i];
+for (let i = 0; i < $diffList.length; i++) {
+  const $diffItem = $diffList[i];
   const img = document.createElement("img");
   img.src = `./img/diff_${i + 1}.png`; // 이미지 경로 설정
   img.alt = "차별점 이미지";
-  diffItem.querySelector("div").appendChild(img);
+  $diffItem.querySelector("div").appendChild(img);
+}
+
+function reviewMore() {
+  for (let i = 2; i < $diffList.length; i++)
+    $diffList[i].classList.add("active");
+  $detail.innerHTML = `<span class="less" onclick="reviewLess();">-감추기</span>`;
+}
+function reviewLess() {
+  for (let i = 2; i < $diffList.length; i++)
+    $diffList[i].classList.remove("active");
+  $detail.innerHTML = `<span class="more" onclick="reviewMore();">+더보기</span>`;
 }
 
 // 온라인 강의 슬라이드

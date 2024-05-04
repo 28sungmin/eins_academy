@@ -92,6 +92,7 @@ header .slider_box .wrap .login ul {
 header .slider_box .wrap .login ul li {
   margin: 10px;
   font-weight: bold;
+  cursor: pointer;
 }
 header .slider_box .welcome {
   text-align: center;

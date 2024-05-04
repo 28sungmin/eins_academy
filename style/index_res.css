@@ -4,7 +4,15 @@
   .resBtn {
     display: none;
   }
+  .detail {
+    display: none;
+  }
+  section .diff .detail {
+    display: none;
+  }
 }
+
+/* max-width: 1199px */
 @media (max-width: 1199px) {
   header .slider_box .wrap {
     width: 95%;
@@ -65,7 +73,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.75);
 
-    transform: translateY(-100%);
+    transform: translateY(-200%);
     /* fixed 라서 가능 */
     z-index: 1;
   }
@@ -122,7 +130,61 @@
     width: 50%;
     margin: 0 auto;
   }
+
+  /* 다른 교육기관과 차이가 있다면? */
+  section .diff .detail {
+    cursor: pointer;
+  }
+  section .diff ul {
+  }
+  section .diff ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  section .diff ul li > nav > h5 {
+    transition: transform 0.3s ease-in-out;
+  }
+  section .diff ul li:hover nav > h5 {
+    transform: translateY(-60%);
+  }
+  section .diff ul li > div {
+    display: none;
+  }
+  section .diff ul li > nav > h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3px;
+  }
+  section .diff ul li:nth-child(4):hover > nav > h5 {
+    transform: translateY(-13%);
+  }
+  section .diff ul li > nav > p {
+    display: none;
+  }
+  section .diff ul li:hover > nav > p {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.9rem;
+  }
+  section .diff ul .diff3,
+  section .diff ul .diff4,
+  section .diff ul .diff5 {
+    display: none;
+  }
+  section .diff ul .diff3.active,
+  section .diff ul .diff4.active,
+  section .diff ul .diff5.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
+
+/* max-width: 767px */
 @media (max-width: 767px) {
   /* 메인 화면 */
   header .slider_box {
