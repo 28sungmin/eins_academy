@@ -26,6 +26,31 @@ a {
   text-decoration: none;
 }
 
+/* cursor */
+.cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.cursor .circle {
+  position: fixed;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #a300a8;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in-out;
+}
+
+.cursor:hover .circle::before,
+.cursor:hover .circle::after {
+  transform: scaleY(1);
+  opacity: 1;
+}
 /* header wrap 꾸미기 */
 header .slider_box {
   width: 100%;
@@ -361,6 +386,7 @@ section .wrap3 .test_img .click .button_wrap button {
   background-color: #f4f6f9;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 #slider_box {
   width: 300px;

@@ -1,3 +1,14 @@
+// cursor
+const $cursor = document.querySelector(".cursor");
+
+document.addEventListener("mousemove", (e) => {
+  const mouseX = e.clientX;
+  const mouseY = e.clientY;
+
+  $cursor.style.left = mouseX + "px";
+  $cursor.style.top = mouseY + "px";
+});
+
 // 메인 이미지 넘기기
 const slide = document.querySelector(".slider_box .slider");
 const $nav = document.querySelector(".welcome_nav");
