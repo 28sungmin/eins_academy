@@ -352,7 +352,7 @@ section .wrap3 .test_img .click .button_wrap button {
   color: #000;
   display: flex;
   position: absolute;
-  top: 50%;
+  top: 40px;
   /* left: 30%; */
   left: 500px;
   transform: translateY(-50%);

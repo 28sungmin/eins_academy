@@ -313,8 +313,8 @@
   /* 온라인 교육 강의 */
   #online_title .arrow {
     position: absolute;
-    top: 50%;
-    left: 350px;
+    top: 33px;
+    left: 300px;
     transform: translateY(-50%);
     transition: 0.5s;
   }
